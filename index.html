@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK Entrepreneur Alam Darussalam - Bertaqwa, Cerdas, dan Berakhlak Mulia</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Website Resmi SMK Entrepreneur Alam Darussalam. Sekolah kejuruan berbasis kewirausahaan dan berkarakter mulia di Megang Sakti, Musi Rawas, Sumatera Selatan.">
+  <meta name="keywords" content="SMK Entrepreneur Alam Darussalam, SMK Megang Sakti, SMK Musi Rawas, PPDB SMK Alam Darussalam, Jurusan TKJ, Jurusan TKR, Sekolah Wirausaha">
+  
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo-wrapper" onclick="navigateToSection('beranda'); return false;">
+        <img src="logo.jpg" alt="Logo SMK Entrepreneur Alam Darussalam" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-title">SMK ENTREPRENEUR</span>
+          <span class="logo-subtitle">ALAM DARUSSALAM</span>
+        </div>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link active" onclick="navigateToSection('beranda'); return false;">Beranda</a></li>
+        <li><a href="#" class="nav-link" onclick="navigateToSection('profil'); return false;">Profil</a></li>
+        <li><a href="#" class="nav-link" onclick="navigateToSection('jurusan'); return false;">Jurusan</a></li>
+        <li><a href="#" class="nav-link" onclick="navigateToSection('portal'); return false;">Portal Akademik</a></li>
+        <li><a href="#" class="nav-link" onclick="navigateToSection('ppdb'); return false;">Pendaftaran (PPDB)</a></li>
+        <li><a href="#" class="btn btn-primary" onclick="navigateToSection('ppdb'); return false;" style="padding: 8px 20px; font-size: 13px;">Daftar Sekarang</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT SECTIONS ==================== -->
+  <main>
+    
+    <!-- 1. BERANDA VIEW -->
+    <section id="section-beranda" class="hero">
+      <!-- DYNAMIC IMAGE SLIDER -->
+      <div class="container" style="margin-bottom: 60px;">
+        <div class="slider-container">
+          <div class="slides-wrapper" id="slider-wrapper">
+            <div class="slide active">
+              <img src="slide1.jpg" alt="Slide 1 - Menjelajahi Dunia Terkoneksi">
+            </div>
+            <div class="slide">
+              <img src="slide2.jpg" alt="Slide 2 - Membangun Mimpi Satu Kode">
+            </div>
+            <div class="slide">
+              <img src="slide3.jpg" alt="Slide 3 - Menginspirasi Inovasi Cerdas">
+            </div>
+            <div class="slide">
+              <img src="slide4.jpg" alt="Slide 4 - Menguasai Teknologi Unggul">
+            </div>
+            <div class="slide">
+              <img src="slide5.jpg" alt="Slide 5 - Berinovasi Untuk Bumi Berkelanjutan">
+            </div>
+          </div>
+          
+          <!-- Slider Controls -->
+          <button type="button" class="slider-btn prev-btn" id="prev-btn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+          <button type="button" class="slider-btn next-btn" id="next-btn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+          
+          <!-- Dots -->
+          <div class="slider-dots" id="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO BANNER UTAMA (Full-Width) -->
+      <div class="hero-banner-wrapper">
+        <div class="hero-banner-inner">
+          <img src="header_banner2.png" alt="SMK Entrepreneur Alam Darussalam Banner" class="hero-banner-img" id="hero-banner-img">
+          <!-- Overlay gradient untuk efek premium -->
+          <div class="hero-banner-overlay"></div>
+          <!-- CTA Buttons di atas banner -->
+          <div class="hero-banner-cta">
+            <a href="#" class="btn btn-accent hero-cta-btn" onclick="navigateToSection('ppdb'); return false;">
+              <i class="fas fa-file-signature"></i> Daftar Sekarang
+            </a>
+            <a href="#" class="btn hero-cta-btn-outline" onclick="navigateToSection('jurusan'); return false;">
+              <i class="fas fa-graduation-cap"></i> Lihat Jurusan
+            </a>
+          </div>
+        </div>
+        <!-- Stats Bar -->
+        <div class="hero-stats-bar">
+          <div class="stat-bar-item">
+            <i class="fas fa-users-class"></i>
+            <div>
+              <span class="stat-bar-number">3</span>
+              <span class="stat-bar-label">Program Keahlian</span>
+            </div>
+          </div>
+          <div class="stat-bar-divider"></div>
+          <div class="stat-bar-item">
+            <i class="fas fa-calendar-check"></i>
+            <div>
+              <span class="stat-bar-number">TA 2026/2027</span>
+              <span class="stat-bar-label">PPDB Sekarang Dibuka</span>
+            </div>
+          </div>
+          <div class="stat-bar-divider"></div>
+          <div class="stat-bar-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="stat-bar-number">Musi Rawas</span>
+              <span class="stat-bar-label">Megang Sakti, Sumsel</span>
+            </div>
+          </div>
+          <div class="stat-bar-divider"></div>
+          <div class="stat-bar-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <span class="stat-bar-number">0857-8313-0243</span>
+              <span class="stat-bar-label">Info Pendaftaran (Putri)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHTS / KEUNGGULAN -->
+      <div class="container" style="margin-top: 100px;">
+        <div class="section-header text-center">
+          <span class="badge-tag">Keunggulan Kami</span>
+          <h2 class="section-title">Mengapa Memilih Kami?</h2>
+          <p class="section-subtitle">Kami berkomitmen memberikan pendidikan terbaik dengan mengintegrasikan nilai wirausaha, teknologi, dan akhlakul karimah.</p>
+        </div>
+
+        <div class="jurusan-grid">
+          
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3 class="jurusan-title">Kurikulum Kewirausahaan</h3>
+            <p class="jurusan-desc">Setiap siswa diajarkan dasar-dasar bisnis, pemasaran digital, dan kepemimpinan untuk melahirkan mental pengusaha yang mandiri.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-check-circle"></i> Praktik Bisnis Riil</li>
+              <li><i class="fas fa-check-circle"></i> Mentoring Inkubasi Bisnis</li>
+            </ul>
+          </div>
+
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-hands-holding"></i></div>
+            <h3 class="jurusan-title">Karakter Religius</h3>
+            <p class="jurusan-desc">Mengutamakan pembiasaan ibadah harian, akhlak mulia, dan nilai-nilai religius untuk membentuk kepribadian yang tangguh dan amanah.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-check-circle"></i> Pembiasaan Salat Berjemaah</li>
+              <li><i class="fas fa-check-circle"></i> Pendidikan Karakter Islami</li>
+            </ul>
+          </div>
+
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-leaf"></i></div>
+            <h3 class="jurusan-title">Cinta Lingkungan (Alam)</h3>
+            <p class="jurusan-desc">Mengajarkan konsep harmoni dengan alam, keberlanjutan lingkungan, dan kepedulian sosial melalui program green campus.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-check-circle"></i> Kegiatan Luar Ruang (Outbound)</li>
+              <li><i class="fas fa-check-circle"></i> Pemanfaatan Sumber Daya Hijau</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2. PROFIL VIEW -->
+    <section id="section-profil" class="section-padding" style="display:none;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="badge-tag">Profil Sekolah</span>
+          <h2 class="section-title">Kenal Lebih Dekat</h2>
+          <p class="section-subtitle">Membangun masa depan cemerlang di atas fondasi iman, takwa, dan inovasi bisnis.</p>
+        </div>
+
+        <div class="ppdb-grid" style="align-items: flex-start; margin-bottom: 60px;">
+          <div class="db-card">
+            <h3 style="color: var(--primary); margin-bottom: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 8px;">Visi</h3>
+            <p style="font-size: 16px; font-weight: 600; font-style: italic; margin-bottom: 24px; color: var(--secondary);">
+              "Menjadi pusat pendidikan kejuruan entrepreneur unggulan yang menghasilkan lulusan bertaqwa, cerdas, berakhlak mulia, dan peduli terhadap kelestarian alam."
+            </p>
+            
+            <h3 style="color: var(--primary); margin-bottom: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 8px;">Misi</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; font-size: 14px;">
+                <span style="color: var(--accent); font-weight: bold;">1.</span>
+                <span>Menyelenggarakan pendidikan kejuruan yang berorientasi pada kemandirian wirausaha (entrepreneurship).</span>
+              </li>
+              <li style="display: flex; gap: 12px; font-size: 14px;">
+                <span style="color: var(--accent); font-weight: bold;">2.</span>
+                <span>Membina pembiasaan akhlak mulia dan ketakwaan melalui program keagamaan yang terintegrasi.</span>
+              </li>
+              <li style="display: flex; gap: 12px; font-size: 14px;">
+                <span style="color: var(--accent); font-weight: bold;">3.</span>
+                <span>Mengembangkan potensi kecerdasan intelektual, keterampilan teknologi, dan kreativitas siswa.</span>
+              </li>
+              <li style="display: flex; gap: 12px; font-size: 14px;">
+                <span style="color: var(--accent); font-weight: bold;">4.</span>
+                <span>Menanamkan kecintaan dan kepedulian terhadap kelestarian lingkungan hidup dan alam sekitar.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="db-card">
+            <h3 style="color: var(--primary); margin-bottom: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 8px;">Identitas & Lokasi</h3>
+            
+            <div class="contact-card-list" style="margin: 0 0 24px 0;">
+              <div class="contact-card" style="background-color: var(--bg-main);">
+                <div class="contact-info">
+                  <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="contact-details">
+                    <h5>Alamat Sekolah</h5>
+                    <p style="line-height: 1.4;">Megang Sakti - V, Kec. Megang Sakti, Kab. Musi Rawas, Prov. Sumatera Selatan, Kode Pos 31657</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-card" style="background-color: var(--bg-main);">
+                <div class="contact-info">
+                  <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="contact-details">
+                    <h5>Surel Resmi</h5>
+                    <p>smk.alamdarussalam@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-card" style="background-color: var(--bg-main);">
+                <div class="contact-info">
+                  <div class="contact-icon"><i class="fas fa-calendar-alt"></i></div>
+                  <div class="contact-details">
+                    <h5>Status Akreditasi</h5>
+                    <p>Proses Pengembangan & Siap Melayani Pembelajaran Unggul</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background-color: var(--primary-ultra-light); border: 1px dashed var(--primary); padding: 16px; border-radius: var(--border-radius-sm); text-align: center;">
+              <i class="fas fa-graduation-cap" style="font-size: 28px; color: var(--primary); margin-bottom: 8px;"></i>
+              <h5 style="color: var(--primary); font-weight: 700;">Mari Bergabung Bersama Kami!</h5>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Dapatkan beasiswa khusus wirausaha muda bagi pendaftar gelombang pertama.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3. JURUSAN VIEW -->
+    <section id="section-jurusan" class="section-padding" style="display:none;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="badge-tag">Program Keahlian</span>
+          <h2 class="section-title">Program Studi Pilihan</h2>
+          <p class="section-subtitle">Pilih kompetensi keahlian yang sesuai dengan bakat, minat, dan prospek karir masa depanmu.</p>
+        </div>
+
+        <div class="jurusan-grid">
+          
+          <!-- Jurusan 1 -->
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="jurusan-title">Teknik Komputer & Jaringan (TKJ)</h3>
+            <p class="jurusan-desc">Membekali siswa dengan keahlian perakitan komputer, instalasi sistem operasi, administrasi jaringan lokal (LAN) maupun nirkabel, manajemen server cloud, serta dasar cyber security.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-server"></i> Cisco & Mikrotik Routing</li>
+              <li><i class="fas fa-network-wired"></i> Administrasi Sistem Jaringan</li>
+              <li><i class="fas fa-shield-halved"></i> Dasar Keamanan Jaringan</li>
+              <li><i class="fas fa-briefcase"></i> Prospek: Network Admin, IT Support, IT Entrepreneur</li>
+            </ul>
+          </div>
+
+          <!-- Jurusan 2 -->
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-car-side"></i></div>
+            <h3 class="jurusan-title">Teknik Kendaraan Ringan (TKR)</h3>
+            <p class="jurusan-desc">Mempelajari perawatan berkala kendaraan roda empat, perbaikan sistem mesin otomotif (bensin & diesel), sistem kelistrikan mobil, teknologi EFI, serta pengelolaan bengkel otomotif mandiri.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-screwdriver-wrench"></i> Engine Tune-Up & EFI System</li>
+              <li><i class="fas fa-bolt"></i> Kelistrikan & Aksesoris Mobil</li>
+              <li><i class="fas fa-clipboard-list"></i> Manajemen Bengkel Otomotif</li>
+              <li><i class="fas fa-briefcase"></i> Prospek: Teknisi Otomotif, Service Advisor, Owner Bengkel</li>
+            </ul>
+          </div>
+
+          <!-- Jurusan 3 -->
+          <div class="jurusan-card">
+            <div class="jurusan-icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="jurusan-title">Bisnis Digital & Kewirausahaan</h3>
+            <p class="jurusan-desc">Mempelajari strategi pemasaran online, pengelolaan e-commerce, pembuatan konten bisnis (copywriting & branding), riset pasar digital, serta pengelolaan unit usaha start-up mandiri.</p>
+            <ul class="jurusan-features">
+              <li><i class="fas fa-store"></i> E-Commerce & Retail Management</li>
+              <li><i class="fas fa-bullhorn"></i> Digital Marketing & Social Media</li>
+              <li><i class="fas fa-money-bill-trend-up"></i> Perencanaan Finansial Usaha</li>
+              <li><i class="fas fa-briefcase"></i> Prospek: Social Media Strategist, Digital Marketer, Startup Founder</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. PORTAL VIEW (INTERACTIVE DASHBOARD) -->
+    <section id="section-portal" class="section-padding" style="display:none;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="badge-tag">Portal Informasi Sekolah</span>
+          <h2 class="section-title">Sistem Informasi Akademik</h2>
+          <p class="section-subtitle">Akses data pembelajaran, administrasi, dan perkembangan akademis secara terintegrasi.</p>
+        </div>
+
+        <div class="portal-tabs-wrapper">
+          
+          <div class="portal-tabs">
+            <button class="tab-btn portal-tab-btn active" data-target="portal-guru">
+              <i class="fas fa-user-tie"></i> Portal Guru
+            </button>
+            <button class="tab-btn portal-tab-btn" data-target="portal-siswa">
+              <i class="fas fa-user-graduate"></i> Portal Siswa
+            </button>
+            <button class="tab-btn portal-tab-btn" data-target="portal-wali">
+              <i class="fas fa-users"></i> Portal Wali Murid
+            </button>
+          </div>
+
+          <!-- PORTAL GURU -->
+          <div class="tab-pane portal-pane active" id="portal-guru">
+            <div class="db-grid">
+              
+              <div class="db-sidebar">
+                <div class="user-profile">
+                  <div class="avatar">Q</div>
+                  <div class="avatar-info">
+                    <h4>Bapak Qodir, S.Pd.</h4>
+                    <p>NIP. 19940823 202301 1 002</p>
+                  </div>
+                </div>
+                <ul class="db-nav">
+                  <li><a class="db-nav-link active"><i class="fas fa-calendar-day"></i> Jadwal Mengajar</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-folder-open"></i> Bahan & RPP</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-clipboard-check"></i> Presensi Kelas</a></li>
+                </ul>
+              </div>
+
+              <div class="db-content">
+                <div class="db-card">
+                  <div class="db-header">
+                    <span class="db-title">Jadwal Mengajar Semester Genap</span>
+                    <button class="btn btn-primary" id="add-schedule-btn" style="padding: 6px 12px; font-size: 12px;">
+                      <i class="fas fa-plus"></i> Tambah Jadwal
+                    </button>
+                  </div>
+                  <div style="overflow-x: auto;">
+                    <table class="schedule-table">
+                      <thead>
+                        <tr>
+                          <th>Hari</th>
+                          <th>Jam</th>
+                          <th>Mata Pelajaran</th>
+                          <th>Kelas</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody id="schedule-table-body">
+                        <tr>
+                          <td><strong>Senin</strong></td>
+                          <td>07:30 - 09:00</td>
+                          <td>Konsep Bisnis Digital</td>
+                          <td>XI Bisnis Digital</td>
+                          <td><span class="badge-status status-success">Aktif</span></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Selasa</strong></td>
+                          <td>09:30 - 11:00</td>
+                          <td>Pemrograman Jaringan</td>
+                          <td>X TKJ</td>
+                          <td><span class="badge-status status-success">Aktif</span></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Rabu</strong></td>
+                          <td>08:00 - 10:00</td>
+                          <td>Dasar Otomotif & EFI</td>
+                          <td>XII TKR</td>
+                          <td><span class="badge-status status-success">Aktif</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PORTAL SISWA -->
+          <div class="tab-pane portal-pane" id="portal-siswa">
+            <div class="db-grid">
+              
+              <div class="db-sidebar">
+                <div class="user-profile">
+                  <div class="avatar">A</div>
+                  <div class="avatar-info">
+                    <h4>Ahmad Hidayat</h4>
+                    <p>NISN. 0087654321</p>
+                  </div>
+                </div>
+                <ul class="db-nav">
+                  <li><a class="db-nav-link active"><i class="fas fa-award"></i> Kalkulator Nilai KKM</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-book-reader"></i> Tugas Sekolah</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-calendar-alt"></i> Kalender Kelas</a></li>
+                </ul>
+              </div>
+
+              <div class="db-content">
+                <div class="db-card">
+                  <div class="db-header">
+                    <span class="db-title">Simulasi & Kalkulator Nilai Akhir Siswa</span>
+                  </div>
+                  <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Masukkan prediksi atau nilai ujian Anda untuk mengetahui apakah Anda melampaui kriteria kelulusan minimal (KKM = 75).</p>
+                  
+                  <div class="grade-tracker-widget">
+                    <div class="grade-input-group">
+                      <div style="display:flex; flex-direction:column; gap:6px;">
+                        <label class="form-label">Nilai Praktik Otomotif / Kewirausahaan</label>
+                        <input type="number" id="grade-tkr" class="form-input" min="0" max="100" value="85">
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:6px;">
+                        <label class="form-label">Nilai Praktik Jaringan / Komputer</label>
+                        <input type="number" id="grade-tkj" class="form-input" min="0" max="100" value="80">
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:6px;">
+                        <label class="form-label">Nilai Rencana Bisnis / Entrepreneur</label>
+                        <input type="number" id="grade-ent" class="form-input" min="0" max="100" value="90">
+                      </div>
+                      <div style="display:flex; flex-direction:column; gap:6px;">
+                        <label class="form-label">Nilai Pendidikan Agama & Akhlak</label>
+                        <input type="number" id="grade-religion" class="form-input" min="0" max="100" value="88">
+                      </div>
+                      <button class="btn btn-primary" id="btn-calculate-grade" style="margin-top: 8px;">
+                        <i class="fas fa-calculator"></i> Hitung Rata-rata
+                      </button>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                      <div id="grade-result-box" style="display: none; padding: 24px; border-radius: var(--border-radius-sm); border: 2px solid var(--primary); text-align: center;">
+                        <i class="fas fa-circle-check" style="font-size: 40px; color: var(--primary); margin-bottom: 12px;"></i>
+                        <h4 style="margin-bottom: 8px; color: var(--secondary);">Hasil Evaluasi</h4>
+                        <div id="grade-result-text"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PORTAL WALI MURID -->
+          <div class="tab-pane portal-pane" id="portal-wali">
+            <div class="db-grid">
+              
+              <div class="db-sidebar">
+                <div class="user-profile">
+                  <div class="avatar">P</div>
+                  <div class="avatar-info">
+                    <h4>Bapak Sugeng (Wali Ahmad)</h4>
+                    <p>Wali Murid Kelas X TKJ</p>
+                  </div>
+                </div>
+                <ul class="db-nav">
+                  <li><a class="db-nav-link active"><i class="fas fa-file-invoice-dollar"></i> Tagihan SPP</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-bullhorn"></i> Pengumuman</a></li>
+                  <li><a class="db-nav-link"><i class="fas fa-comments"></i> Konsultasi Guru</a></li>
+                </ul>
+              </div>
+
+              <div class="db-content">
+                <div class="db-card">
+                  <div class="db-header">
+                    <span class="db-title">Daftar Tagihan Uang Sekolah (SPP)</span>
+                  </div>
+                  
+                  <div style="overflow-x: auto;">
+                    <table class="schedule-table">
+                      <thead>
+                        <tr>
+                          <th>Bulan</th>
+                          <th>Jumlah Tagihan</th>
+                          <th>Jatuh Tempo</th>
+                          <th>Status</th>
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Januari 2026</strong></td>
+                          <td>Rp 150.000</td>
+                          <td>10 Jan 2026</td>
+                          <td><span id="status-januari" class="badge-status status-success">Lunas</span></td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Februari 2026</strong></td>
+                          <td>Rp 150.000</td>
+                          <td>10 Feb 2026</td>
+                          <td><span id="status-februari" class="badge-status status-warning">Belum Bayar</span></td>
+                          <td>
+                            <button id="pay-btn-februari" class="btn btn-accent" onclick="paySppBill('Februari', 150000)" style="padding: 4px 10px; font-size: 11px; border-radius: 4px;">
+                              Bayar Sekarang
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><strong>Maret 2026</strong></td>
+                          <td>Rp 150.000</td>
+                          <td>10 Mar 2026</td>
+                          <td><span id="status-maret" class="badge-status status-warning">Belum Bayar</span></td>
+                          <td>
+                            <button id="pay-btn-maret" class="btn btn-accent" onclick="paySppBill('Maret', 150000)" style="padding: 4px 10px; font-size: 11px; border-radius: 4px;">
+                              Bayar Sekarang
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 5. PPDB / REGISTER VIEW -->
+    <section id="section-ppdb" class="section-padding" style="display:none;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="badge-tag">Penerimaan Siswa Baru (PPDB)</span>
+          <h2 class="section-title">Formulir Pendaftaran Online</h2>
+          <p class="section-subtitle">Daftarkan dirimu dengan cepat dan mudah secara online. Data akan langsung terhubung ke admin panitia PPDB via WhatsApp.</p>
+        </div>
+
+        <div class="ppdb-bg">
+          <div class="ppdb-grid">
+            
+            <div>
+              <h3 style="color: var(--primary); margin-bottom: 12px; font-size: 22px;">Informasi Pendaftaran</h3>
+              <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">Silakan isi formulir di sebelah kanan dengan lengkap. Setelah klik kirim, sistem akan membuat pesan WhatsApp otomatis untuk verifikasi berkas oleh admin kami.</p>
+              
+              <h4 style="color: var(--secondary); font-size: 16px; margin-bottom: 12px;">Kontak Panitia PPDB (WhatsApp):</h4>
+              
+              <div class="contact-card-list">
+                
+                <!-- Kontak 1: Putri -->
+                <div class="contact-card">
+                  <div class="contact-info">
+                    <div class="contact-icon" style="background-color: rgba(37,211,102,0.1); color: #25d366;"><i class="fab fa-whatsapp"></i></div>
+                    <div class="contact-details">
+                      <h5>Ibu Putri</h5>
+                      <p>0857-8313-0243</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/6285783130243" target="_blank" class="wa-btn">
+                    <i class="fab fa-whatsapp"></i> Chat Info
+                  </a>
+                </div>
+
+                <!-- Kontak 2: Qodir -->
+                <div class="contact-card">
+                  <div class="contact-info">
+                    <div class="contact-icon" style="background-color: rgba(37,211,102,0.1); color: #25d366;"><i class="fab fa-whatsapp"></i></div>
+                    <div class="contact-details">
+                      <h5>Bapak Qodir</h5>
+                      <p>0853-5763-0009</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/6285357630009" target="_blank" class="wa-btn">
+                    <i class="fab fa-whatsapp"></i> Chat Info
+                  </a>
+                </div>
+
+                <!-- Kontak 3: Anam -->
+                <div class="contact-card">
+                  <div class="contact-info">
+                    <div class="contact-icon" style="background-color: rgba(37,211,102,0.1); color: #25d366;"><i class="fab fa-whatsapp"></i></div>
+                    <div class="contact-details">
+                      <h5>Bapak Anam</h5>
+                      <p>0812-7866-9721</p>
+                    </div>
+                  </div>
+                  <a href="https://wa.me/6281278669721" target="_blank" class="wa-btn">
+                    <i class="fab fa-whatsapp"></i> Chat Info
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PPDB Form Widget -->
+            <div class="ppdb-form">
+              <h3 style="color: var(--secondary); font-size: 18px; margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px;">Isi Formulir Calon Siswa</h3>
+              
+              <form id="ppdb-registration-form">
+                <div class="ppdb-form-grid">
+                  
+                  <div class="form-group-full" style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">Nama Lengkap Calon Siswa <span style="color:var(--danger)">*</span></label>
+                    <input type="text" id="ppdb-name" class="form-input" placeholder="Masukkan nama lengkap Anda" required>
+                  </div>
+
+                  <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">NISN <span style="color:var(--danger)">*</span></label>
+                    <input type="number" id="ppdb-nisn" class="form-input" placeholder="Nomor Induk Siswa Nasional" required>
+                  </div>
+
+                  <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">Asal Sekolah <span style="color:var(--danger)">*</span></label>
+                    <input type="text" id="ppdb-school" class="form-input" placeholder="Nama SMP / MTs asal" required>
+                  </div>
+
+                  <div class="form-group-full" style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">Pilihan Program Keahlian (Jurusan) <span style="color:var(--danger)">*</span></label>
+                    <select id="ppdb-major" class="form-input" required style="background: white;">
+                      <option value="" disabled selected>Pilih Jurusan...</option>
+                      <option value="Teknik Komputer & Jaringan (TKJ)">Teknik Komputer & Jaringan (TKJ)</option>
+                      <option value="Teknik Kendaraan Ringan (TKR)">Teknik Kendaraan Ringan (TKR)</option>
+                      <option value="Bisnis Digital & Kewirausahaan">Bisnis Digital & Kewirausahaan</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group-full" style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">No. Handphone / WhatsApp Aktif <span style="color:var(--danger)">*</span></label>
+                    <input type="tel" id="ppdb-phone" class="form-input" placeholder="contoh: 08123456789" required>
+                  </div>
+
+                  <div class="form-group-full" style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="form-label">Kirim Formulir ke Admin PPDB <span style="color:var(--danger)">*</span></label>
+                    <select id="ppdb-admin" class="form-input" required style="background: white;">
+                      <option value="putri" selected>Ibu Putri (0857-8313-0243)</option>
+                      <option value="qodir">Bapak Qodir (0853-5763-0009)</option>
+                      <option value="anam">Bapak Anam (0812-7866-9721)</option>
+                    </select>
+                  </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary ppdb-btn">
+                  <i class="fas fa-paper-plane"></i> Kirim ke WhatsApp Admin
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container footer-grid">
+      
+      <!-- Info Left -->
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="logo.jpg" alt="Logo SMK Alam Darussalam" style="height: 48px; width: auto;">
+          <span class="footer-logo-text">SMK ENTREPRENEUR</span>
+        </div>
+        <p class="footer-logo-desc">Pusat pendidikan kejuruan berbasis kewirausahaan, berakhlak mulia, dan berwawasan lingkungan alam di Musi Rawas, Sumatera Selatan.</p>
+        <div style="display: flex; gap: 12px; margin-top: 8px;">
+          <a href="#" style="color: white; font-size: 18px;"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 18px;"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links Center -->
+      <div>
+        <h4 class="footer-title">Tautan Cepat</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="navigateToSection('beranda'); return false;">Beranda Utama</a></li>
+          <li><a href="#" onclick="navigateToSection('profil'); return false;">Profil & Visi Misi</a></li>
+          <li><a href="#" onclick="navigateToSection('jurusan'); return false;">Kompetensi Keahlian</a></li>
+          <li><a href="#" onclick="navigateToSection('portal'); return false;">Sistem Informasi</a></li>
+          <li><a href="#" onclick="navigateToSection('ppdb'); return false;">Pendaftaran Siswa Baru</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Right -->
+      <div>
+        <h4 class="footer-title">Hubungi Kami</h4>
+        
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="footer-contact-content">
+            <h6>Alamat Kampus</h6>
+            <p>Megang Sakti - V, Kecamatan Megang Sakti, Kabupaten Musi Rawas, Sumatera Selatan, 31657</p>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <div class="footer-contact-content">
+            <h6>Surel Resmi</h6>
+            <p>smk.alamdarussalam@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div class="footer-contact-content">
+            <h6>Layanan Informasi Pendaftaran</h6>
+            <p>0857-8313-0243 (Putri) | 0853-5763-0009 (Qodir)</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SMK Entrepreneur Alam Darussalam. All Rights Reserved.</p>
+      <p>Bertaqwa, Cerdas, dan Berakhlak Mulia</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
